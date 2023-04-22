@@ -1,0 +1,66 @@
+{
+    "vim.vimrc.enable": true,
+    "vim.useSystemClipboard": true,
+    "vim.hlsearch": true,
+    "C_Cpp.clang_format_fallbackStyle": "{ BasedOnStyle: LLVM, IndentWidth: 4 }",
+    "telemetry.telemetryLevel": "off",
+    "editor.renderWhitespace": "trailing",
+    "editor.fontFamily": "'JetBrainsMono Nerd Font', 'Cartograph CF Light', Consolas",
+    "vim.easymotion": true,
+    "C_Cpp.default.compilerPath": "/usr/bin/gcc",
+    "workbench.preferredDarkColorTheme": "Monokai Pro (Filter Machine)",
+    "workbench.preferredLightColorTheme": "Noctis Lilac",
+    "workbench.iconTheme": "Monokai Pro (Filter Machine) Icons",
+    "window.titleBarStyle": "custom",
+    "window.dialogStyle": "custom",
+    "window.restoreWindows": "folders",
+    "window.title": "${dirty}${activeEditorShort}${separator}${rootName}",
+    "editor.find.cursorMoveOnType": false,
+    "editor.find.seedSearchStringFromSelection": "selection",
+    "editor.acceptSuggestionOnEnter": "off",
+    "editor.quickSuggestionsDelay": 20,
+    "editor.suggestFontSize": 14,
+    "files.autoGuessEncoding": true,
+    "files.trimFinalNewlines": true,
+    "dotnetAcquisitionExtension.enableTelemetry": false,
+    "vim.camelCaseMotion.enable": true,
+    "workbench.colorTheme": "One Dark Pro",
+    "files.exclude": {
+        "**/.stfolder": true,
+        "**/.stversions": true,
+        "**/.vscode": true
+    },
+    "editor.cursorSmoothCaretAnimation": "on",
+    "editor.insertSpaces": false,
+    "editor.fontSize": 15.5,
+    "settingsSync.ignoredSettings": [
+        "editor.fontSize",
+        "editor.suggestFontSize",
+        "terminal.integrated.fontSize",
+        "markdown.preview.fontSize"
+    ],
+    "terminal.integrated.fontFamily": "'JetBrainsMono Nerd Font'",
+    "markdown.preview.fontFamily": "Inter, -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif",
+    "editor.wordWrap": "on",
+    "editor.unicodeHighlight.nonBasicASCII": false,
+    "terminal.integrated.cursorStyle": "line",
+    "editor.fontWeight": "300",
+    "editor.cursorBlinking": "phase",
+    "editor.lineNumbers": "relative",
+    "editor.minimap.renderCharacters": false,
+    "git.openRepositoryInParentFolders": "always",
+
+    // Settings from https://github.com/sleepymalc/VSCode-LaTeX-Inkscape
+    // Auto Correction setup
+    "cSpell.diagnosticLevel": "Warning",
+    // Inkscape setup
+    "command-runner.terminal.name": "runCommand",
+    "command-runner.terminal.autoClear": true,
+    "command-runner.terminal.autoFocus": false,
+    "command-runner.commands": {
+        "inkscapeCreate": "inkscape-figures create ${selectedText} ${fileDirname}/Figures/",
+        "inkscapeEdit": "inkscape-figures edit ${fileDirname}/Figures/",
+        "inkscapeStart": "inkscape-figures watch",
+        "quiver": "open -na 'Google Chrome' --args --new-window <path-to-quiver>/quiver/src/index.html"
+    }
+}
