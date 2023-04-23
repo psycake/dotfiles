@@ -1,3 +1,14 @@
+# Beginning of the "default" snippets
+#
+# These snippets come from https://github.com/sleepymalc/VSCode-LaTeX-Inkscape/blob/main/VSCode-setting/Snippets/latex.hsnips
+# (commit 08eea6b)
+#
+# I have made a few edits to these default snippets
+# The main change I have made (to 175 of them) is that I have replaced " $0" with "$0"
+# I made this change since I found it frustrating to have a space inserted where I didn't want any (i.e. before a closing parenthesis) or to have multiple spaces after using multiple snippets; plus I don't really mind pressing the spacebar
+#
+# I clarify other edits in the relevant snippets
+
 global
 function math(context) {
     return  context.scopes.findLastIndex(s => s.startsWith("meta.math")) > context.scopes.findLastIndex(s => s.startsWith("comment") || s.startsWith("meta.text.normal.tex"));
@@ -104,218 +115,218 @@ endsnippet
 
 context math(context)
 snippet `(?<![\\a-zA-Z])opn` "operator" A
-\mathop{\mathrm{$1}}($2) $0
+\mathop{\mathrm{$1}}($2)$0
 endsnippet
 
 context math(context)
 snippet `(?<![\\a-zA-Z])opl` "operator" A
-\mathop{\mathrm{$1}}\nolimits_{$2}($3) $0
+\mathop{\mathrm{$1}}\nolimits_{$2}($3)$0
 endsnippet
 
 snippet wp "with probability" wA
-w.p.\ $0
+w.p.\$0
 endsnippet
 
 context math(context)
 snippet `(?<![\\a-zA-Z])(;m|mu)` "\mu" A
-\mu $0
+\mu$0
 endsnippet
 
 context math(context)
 snippet `(?<![\\a-zA-Z])(;a|alpha)` "\alpha" A
-\alpha $0
+\alpha$0
 endsnippet
 
 context math(context)
 snippet `(?<![\\a-zA-Z])(;s|sigma)` "\sigma" A
-\sigma $0
+\sigma$0
 endsnippet
 context math(context)
 snippet `(?<![\\a-zA-Z])(;S|Sigma)` "\Sigma" A
-\Sigma $0
+\Sigma$0
 endsnippet
 
 context math(context)
 snippet `(?<![\\a-zA-Z])(;r|rho)` "\rho" A
-\rho $0
+\rho$0
 endsnippet
 
 context math(context)
 snippet `(?<![\\a-zA-Z])(;b|beta)` "\beta" A
-\beta $0
+\beta$0
 endsnippet
 
 context math(context)
 snippet `(?<![\\a-zA-Z])(;g|gamma)` "\gamma" A
-\gamma $0
+\gamma$0
 endsnippet
 context math(context)
 snippet `(?<![\\a-zA-Z])(;G|Gamma)` "\Gamma" A
-\Gamma $0
+\Gamma$0
 endsnippet
 
 context math(context)
 snippet `(?<![\\a-zA-Z])(;d|delta)` "\delta" A
-\delta $0
+\delta$0
 endsnippet
 context math(context)
 snippet `(?<![\\a-zA-Z])(;D|Delta)` "\Delta" A
-\Delta $0
+\Delta$0
 endsnippet
 
 context math(context)
 snippet `(?<![\\a-zA-Z])(;z|zeta)` "\zeta" A
-\zeta $0
+\zeta$0
 endsnippet
 
 context math(context)
 snippet `(?<![\\a-zA-Z])(;e|eta)` "\eta" A
-\eta $0
+\eta$0
 endsnippet
 
 context math(context)
 snippet `(?<![\\a-zA-Z])(;t|theta)` "\theta" A
-\theta $0
+\theta$0
 endsnippet
 context math(context)
 snippet `(?<![\\a-zA-Z])(;vt|vartheta)` "\vartheta" A
-\vartheta $0
+\vartheta$0
 endsnippet
 
 context math(context)
 snippet `(?<![\\a-zA-Z])(;T|Theta)` "\Theta" A
-\Theta $0
+\Theta$0
 endsnippet
 
 priority 200
 context math(context)
 snippet `(?<![\\a-zA-Z])(;;t|tau)` "\tau" A
-\tau $0
+\tau$0
 endsnippet
 
 context math(context)
 snippet `(?<![\\a-zA-Z])(;i|iota)` "\iota" A
-\iota $0
+\iota$0
 endsnippet
 
 context math(context)
 snippet `(?<![\\a-zA-Z])(;k|kappa)` "\kappa" A
-\kappa $0
+\kappa$0
 endsnippet
 
 context math(context)
 snippet `(?<![\\a-zA-Z])(;l|lambda)` "\lambda" A
-\lambda $0
+\lambda$0
 endsnippet
 context math(context)
 snippet `(?<![\\a-zA-Z])(;L|Lambda)` "\Lambda" A
-\Lambda $0
+\Lambda$0
 endsnippet
 
 context math(context)
 snippet `(?<![\\a-zA-Z])(;n|nu)` "\nu" A
-\nu $0
+\nu$0
 endsnippet
 
 priority 200
 context math(context)
 snippet `(?<![\\a-zA-Z])(;;n|nable)` "\nabla" iA
-\nabla $0
+\nabla$0
 endsnippet
 
 context math(context)
 snippet `(?<![\\a-zA-Z])(;p|pi)` "\pi" A
-\pi $0
+\pi$0
 endsnippet
 context math(context)
 snippet `(?<![\\a-zA-Z])(;P|Pi)` "\Pi" A
-\Pi $0
+\Pi$0
 endsnippet
 
 context math(context)
 snippet `(?<![\\a-zA-Z])(;r|rho)` "\rho" A
-\rho $0
+\rho$0
 endsnippet
 
 context math(context)
 snippet `(?<![\\a-zA-Z])(;t|tau)` "\tau" A
-\tau $0
+\tau$0
 endsnippet
 
 context math(context)
 snippet `(?<![\\a-zA-Z])(;u|upsilon)` "\upsilon" A
-\upsilon $0
+\upsilon$0
 endsnippet
 context math(context)
 snippet `(?<![\\a-zA-Z])(;U|Upsilon)` "\Upsilon" A
-\Upsilon $0
+\Upsilon$0
 endsnippet
 
 priority 200
 context math(context)
 snippet `(?<![\\a-zA-Z])(;;p|phi)` "\phi" A
-\phi $0
+\phi$0
 endsnippet
 priority 200
 context math(context)
 snippet `(?<![\\a-zA-Z])(;;P|Phi)` "\Phi" A
-\Phi $0
+\Phi$0
 endsnippet
 
 context math(context)
 snippet `(?<![\\a-zA-Z])(;vp|varphi)` "\varphi" A
-\varphi $0
+\varphi$0
 endsnippet
 
 context math(context)
 snippet `(?<![\\a-zA-Z])(;c|chi)` "\chi" A
-\chi $0
+\chi$0
 endsnippet
 
 priority 300
 context math(context)
 snippet `(?<![\\a-zA-Z])(;;;p|psi)` "\psi" A
-\psi $0
+\psi$0
 endsnippet
 priority 300
 context math(context)
 snippet `(?<![\\a-zA-Z])(;;;P|Psi)` "\Psi" A
-\Psi $0
+\Psi$0
 endsnippet
 
 context math(context)
 snippet `(?<![\\a-zA-Z])(;o|omega)` "\omega" A
-\omega $0
+\omega$0
 endsnippet
 context math(context)
 snippet `(?<![\\a-zA-Z])(;O|Omega)` "\Omega" A
-\Omega $0
+\Omega$0
 endsnippet
 
 context math(context)
 snippet `(?<![\\a-zA-Z])(;x|xxi)` "\xi" A
-\xi $0
+\xi$0
 endsnippet
 context math(context)
 snippet `(?<![\\a-zA-Z])(;X|Xi)` "\Xi" A
-\Xi $0
+\Xi$0
 endsnippet
 
 context math(context)
 snippet eps "\epsilon" iA
-\epsilon $0
+\epsilon$0
 endsnippet
 
 priority 200
 context math(context)
 snippet veps "\vepsilon" iA
-\varepsilon $0
+\varepsilon$0
 endsnippet
 
 priority 100
 context math(context)
 snippet `(?<![\\a-zA-Z])ell` "\ell" A
-\ell $0
+\ell$0
 endsnippet
 
 context math(context)
@@ -352,146 +363,146 @@ endsnippet
 
 context math(context)
 snippet `>=|(?<!\\)geq` "greater or equal to" A
-\geq $0
+\geq$0
 endsnippet
 
 context math(context)
 snippet `<=|(?<!\\)leq` "less or equal to" A
-\leq $0
+\leq$0
 endsnippet
 
 context math(context)
 snippet `!=|(?<!\\)neq` "not equal" A
-\neq $0
+\neq$0
 endsnippet
 
 context math(context)
 snippet `\|=|(?<!\\)mdl` "models" A
-\models $0
+\models$0
 endsnippet
 
 context math(context)
 snippet `\|-|(?<!\\)vdh` "models" A
-\vdash $0
+\vdash$0
 endsnippet
 
 priority 200
 context math(context)
 snippet suc "succeeds" iA
-\succ $0
+\succ$0
 endsnippet
 
 context math(context)
 snippet seq "succeeds or equal to" iA
-\succeq $0
+\succeq$0
 endsnippet
 
 context math(context)
 snippet prec "precedes" iA
-\prec $0
+\prec$0
 endsnippet
 
 context math(context)
 snippet peq "precedes or equal to" iA
-\preceq $0
+\preceq$0
 endsnippet
 
 context math(context)
 snippet == "constan equal" iA
-\equiv $0
+\equiv$0
 endsnippet
 
 context math(context)
 snippet ~~ "approx equal" iA
-\thickapprox $0
+\thickapprox$0
 endsnippet
 
 context math(context)
 snippet ~= "approx equal(2)" iA
-\cong $0
+\cong$0
 endsnippet
 
 context math(context)
 snippet ~- "approx equal(3)" iA
-\simeq $0
+\simeq$0
 endsnippet
 
 context math(context)
 snippet `(?<!\\)cir` "composition" A
-\circ $0
+\circ$0
 endsnippet
 
 context math(context)
 snippet @> "inclusion" iA
-\hookrightarrow $0
+\hookrightarrow$0
 endsnippet
 
 context math(context)
 snippet || "mid" A
-\mid $0
+\mid$0
 endsnippet
 
 context math(context)
 snippet `([a-zA-Z])\1` "subscript" A
-_{``rv = m[1]``} $0
+_{``rv = m[1]``}$0
 endsnippet
 
 context math(context)
 snippet `([A-Za-z\d)}])\_([A-Za-z\d\-+][A-Za-z\d-+])` "auto subscript" A
-`` rv = m[1]``_{``rv = m[2]``$1} $0
+`` rv = m[1]``_{``rv = m[2]``$1}$0
 endsnippet
 
 priority 200
 context math(context)
 snippet `([A-Za-z\d)}])\^([A-Za-z\d\-+][A-Za-z\d-+])` "auto supscript" A
-`` rv = m[1]``^{``rv = m[2]``$1} $0
+`` rv = m[1]``^{``rv = m[2]``$1}$0
 endsnippet
 
 context math(context)
 snippet `(b|B)(ar)` "bar" A
-\overline{$1} $0
+\overline{$1}$0
 endsnippet
 
 priority 200
 context math(context)
 snippet `(\\?[a-zA-Z]\w*|\\[^(^\s]+\})(b|B)(ar)` "bar" A
-\overline{``rv = m[1]``} $0
+\overline{``rv = m[1]``}$0
 endsnippet
 
 context math(context)
 snippet `(t|T)(d)` "tilde" A
-\widetilde{$1} $0
+\widetilde{$1}$0
 endsnippet
 
 priority 200
 context math(context)
 snippet `(\\?[a-zA-Z]\w*|\\[^(^\s]+\})(t|T)(d)` "tilde" A
-\widetilde{``rv = m[1]``} $0
+\widetilde{``rv = m[1]``}$0
 endsnippet
 
 context math(context)
 snippet `(\\?[a-zA-Z]\w*|\\[^(^\s]+\})(h|H)(t)` "hat" A
-\hat{``rv = m[1]``} $0
+\hat{``rv = m[1]``}$0
 endsnippet
 
 context math(context)
 snippet `(\\?[a-zA-Z]\w*|\\[^(^\s]+\})(b|B)(f)` "mathbf" A
-\mathbf{``rv = m[1]``} $0
+\mathbf{``rv = m[1]``}$0
 endsnippet
 
 context math(context)
 snippet `(\\?[a-zA-Z]\w*|\\[^(^\s]+\})(b|B)(m)` "bm" A
-\bm{``rv = m[1]``} $0
+\bm{``rv = m[1]``}$0
 endsnippet
 
 context math(context)
 snippet `(\\?[a-zA-Z]\w*|\\[^(^\s]+\})(,\.|\.,)` "Vector postfix" A
-\vec{``rv = m[1]``} $0
+\vec{``rv = m[1]``}$0
 endsnippet
 
 context math(context)
 snippet 1..n "sequence" iA
-$1_1, \dots, $1_n $0
+$1_1, \dots, $1_n$0
 endsnippet
 
 snippet fig "Figure environment" b
@@ -505,25 +516,26 @@ endsnippet
 
 context math(context)
 snippet ... "dots" iA
-\dots $0
+\dots$0
 endsnippet
 
 context math(context)
 snippet => "implies" iA
-\implies $0
+\implies$0
 endsnippet
 
 context math(context)
 snippet =< "implied by" iA
-\impliedby $0
+\impliedby$0
 endsnippet
 
 priority 200
 context math(context)
 snippet `(?<!\\)iff` "if and only if" A
-\iff $0
+\iff$0
 endsnippet
 
+# Changed fm for um since I use Dvorak; the same keys are used
 snippet um "inline Math" wA
 \(${1}\)``
 let test = t[1][0];
@@ -535,7 +547,8 @@ else{
 }``$2
 endsnippet
 
-snippet dm "display Math" bA
+# Changed dm for hm to have "symmetrical" keybindings for both math modes; u and h are the home keys on Dvorak
+snippet hm "display Math" bA
 \[
 	${1}
 \]$0
@@ -543,42 +556,42 @@ endsnippet
 
 context math(context)
 snippet <> "<>" iA
-\langle $1 \rangle $0
+\langle $1 \rangle$0
 endsnippet
 
 context math(context)
 snippet lr, "<>" iA
-\left\langle $1 \right\\rangle $0
+\left\langle $1 \right\\rangle$0
 endsnippet
 
 context math(context)
 snippet lrd "()" iA
-\left( $1 \right) $0
+\left( $1 \right)$0
 endsnippet
 
 context math(context)
 snippet {} "{}" iA
-\\{ $1 \\} $0
+\\{ $1 \\}$0
 endsnippet
 
 context math(context)
 snippet lra "{}" iA
-\\left\\{ $1 \\right\\} $0
+\\left\\{ $1 \\right\\}$0
 endsnippet
 
 context math(context)
 snippet lrq "[]" iA
-\left[ $1 \right] $0
+\left[ $1 \right]$0
 endsnippet
 
 context math(context)
 snippet ceil "ceil" iA
-\lceil $1 \rceil $0
+\lceil $1 \rceil$0
 endsnippet
 
 context math(context)
 snippet Ceil "ceil" iA
-\left\lceil $1 \right\rceil $0
+\left\lceil $1 \right\rceil$0
 endsnippet
 
 context math(context)
@@ -593,117 +606,110 @@ endsnippet
 
 context math(context)
 snippet abs "abs value" iA
-\vert ${1} \vert $0
+\vert ${1} \vert$0
 endsnippet
 
 context math(context)
 snippet Abs "abs value" iA
-\left\vert ${1} \right\vert $0
+\left\vert ${1} \right\vert$0
 endsnippet
 
 priority 200
 context math(context)
 snippet norm "norm" iA
-\lVert $1 \rVert $0
+\lVert $1 \rVert$0
 endsnippet
 
 context math(context)
 snippet Norm "Norm" iA
-\left\lVert $1 \right\rVert $0
+\left\lVert $1 \right\rVert$0
 endsnippet
-
-# Added by me
-context math(context)
-snippet `(?<!\\)lsum` "sum" A
-\sum $0
-endsnippet
-# End of added by me
 
 context math(context)
 snippet `(?<!\\)sum` "sum" A
-\sum_{${1:i}} $0
+\sum_{${1:i}}$0
 endsnippet
 
 context math(context)
 snippet Sum "sum" wA
-\sum_{${1:i}=${2:1}}^{${3:\infty}} $0
+\sum_{${1:i}=${2:1}}^{${3:\infty}}$0
 endsnippet
 
 priority 100
 context math(context)
 snippet `(?<!\\)scup` "disjoint union" wA
-\sqcup $0
+\sqcup$0
 endsnippet
 
 context math(context)
 snippet `(?<!\\)cup` "union" wA
-\cup $0
+\cup$0
 endsnippet
 
 context math(context)
 snippet Cup "Union" wA
-\bigcup_{${1:i}=${2:1}}^{${3:\infty}} $0
+\bigcup_{${1:i}=${2:1}}^{${3:\infty}}$0
 endsnippet
 
 context math(context)
 snippet `(?<!\\)cap` "intersection" A
-\cap $0
+\cap$0
 endsnippet
 
 context math(context)
 snippet Cap "Intersection" wA
-\bigcap_{${1:i}=${2:1}}^{${3:\infty}} $0
+\bigcap_{${1:i}=${2:1}}^{${3:\infty}}$0
 endsnippet
 
 context math(context)
 snippet Conj "conjunction" wA
-\bigwedge_{${1:i}=${2:1}}^{${3:\infty}} $0
+\bigwedge_{${1:i}=${2:1}}^{${3:\infty}}$0
 endsnippet
 
 context math(context)
 snippet Disj "disjunction" wA
-\bigvee_{${1:i}=${2:1}}^{${3:\infty}} $0
+\bigvee_{${1:i}=${2:1}}^{${3:\infty}}$0
 endsnippet
 
 context math(context)
 snippet `(?<!\\)sub ` "subset" A
-\subset $0
+\subset$0
 endsnippet
 
 context math(context)
 snippet `(?<!\\)nsub` "nsubseteq" A
-\nsubseteq $0
+\nsubseteq$0
 endsnippet
 
 context math(context)
 snippet sube "subseteq" iA
-\subseteq $0
+\subseteq$0
 endsnippet
 
 context math(context)
 snippet subn "subsetneq" iA
-\subsetneq $0
+\subsetneq$0
 endsnippet
 
 context math(context)
 snippet `\\sups` "supset" A
-\supset $0
+\supset$0
 endsnippet
 
 priority 300
 context math(context)
 snippet `(?<!\\)nsup` "nsupseteq" A
-\nsupseteq $0
+\nsupseteq$0
 endsnippet
 
 context math(context)
 snippet `\\supe` "supseteq" A
-\supseteq $0
+\supseteq$0
 endsnippet
 
 context math(context)
 snippet `\\supn` "supsetneq" A
-\supsetneq $0
+\supsetneq$0
 endsnippet
 
 priority 300
@@ -732,34 +738,34 @@ endsnippet
 
 context math(context)
 snippet prd "product" iA
-\prod_{${1:n}=${2:1}}^{${3:\infty}} $0
+\prod_{${1:n}=${2:1}}^{${3:\infty}}$0
 endsnippet
 
 priority 100
 context math(context)
 snippet coprd "coproduct" iA
-\coprod_{${1:n}=${2:1}}^{${3:\infty}} $0
+\coprod_{${1:n}=${2:1}}^{${3:\infty}}$0
 endsnippet
 
 context math(context)
 snippet pt "\partial" iA
-\partial $0
+\partial$0
 endsnippet
 
 priority 100
 context math(context)
 snippet pdif "d/dx" iA
-\frac{\partial ${1:V}}{\partial ${2:x}} $0
+\frac{\partial ${1:V}}{\partial ${2:x}}$0
 endsnippet
 
 context math(context)
 snippet dif "d/dx" iA
-\frac{\mathrm{d}${1:y}}{\mathrm{d}${2:x}} $0
+\frac{\mathrm{d}${1:y}}{\mathrm{d}${2:x}}$0
 endsnippet
 
 context math(context)
 snippet `(?<!\\)sq` "\sqrt{}" A
-\sqrt{${1}} $0
+\sqrt{${1}}$0
 endsnippet
 
 priority 200
@@ -771,7 +777,7 @@ endsnippet
 priority 300
 context math(context)
 snippet `\^oo` "supscript ^\infty" A
-^{\infty} $0
+^{\infty}$0
 endsnippet
 
 priority 200
@@ -793,18 +799,18 @@ endsnippet
 
 context math(context)
 snippet `o\+` "oplus" A
-\oplus $0
+\oplus$0
 endsnippet
 
 priority 200
 context math(context)
 snippet `o(x\.|\.x)` "otimes" A
-\otimes $0
+\otimes$0
 endsnippet
 
 context math(context)
 snippet `(x\.|\.x)` "times" A
-\times $0
+\times$0
 endsnippet
 
 context math(context)
@@ -825,158 +831,158 @@ endsnippet
 
 context math(context)
 snippet tet "text" iA
-\text{$1} $0
+\text{$1}$0
 endsnippet
 
 snippet tit "text it" wA
-\textit{$1} $0
+\textit{$1}$0
 endsnippet
 
 context math(context)
 snippet `(\\\\)([a-zA-Z])` A
-\mathbb{``rv = m[2].toUpperCase()``} $0
+\mathbb{``rv = m[2].toUpperCase()``}$0
 endsnippet
 
 context math(context)
 snippet nin iA
-\notin $0
+\notin$0
 endsnippet
 
 context math(context)
 snippet inv "inverse" iA
-^{-1} $0
+^{-1}$0
 endsnippet
 
 context math(context)
 snippet `(?<!\\)tp` "transpose" A
-^{\top} $0
+^{\top}$0
 endsnippet
 
 context math(context)
 snippet prp "perp" iA
-^{\perp} $0
+^{\perp}$0
 endsnippet
 
 context math(context)
 snippet cp "complement" iA
-^{c} $0
+^{c}$0
 endsnippet
 
 context math(context)
 snippet qs "square" iA
-^{2} $0
+^{2}$0
 endsnippet
 
 context math(context)
 snippet `->|(?<!\\)to` "to" A
-\to $0
+\to$0
 endsnippet
 
 priority 100
 context math(context)
 snippet `<->` "to" A
-\leftrightarrow $0
+\leftrightarrow$0
 endsnippet
 
 
 context math(context)
 snippet !> "mapsto" iA
-\mapsto $0
+\mapsto$0
 endsnippet
 
 priority 100
 context math(context)
 snippet dint "integral" iA
-\int_{${1:-\infty}}^{${2:\infty}} ${3} \\,\mathrm{d}${4:x} $0
+\int_{${1:-\infty}}^{${2:\infty}} ${3} \\,\mathrm{d}${4:x}$0
 endsnippet
 
 context math(context)
 snippet `(?<!\\)int` "integral without anything" A
-\int $0
+\int$0
 endsnippet
 
 context math(context)
 snippet `(?<!\\)not` "lnot" A
-\lnot $0
+\lnot$0
 endsnippet
 
 priority 200
 context math(context)
 snippet `(?<!\\)(sin|cos|cot|csc|ln|log|exp|perp|inf|sup|Tr|diag|rank|det|dim|ker|Im|Re|dom|arg|min|max|sgn|OPT|land|lor)` "general" wA
-\\``rv = m[1]`` $0
+\\``rv = m[1]``$0
 endsnippet
 
 priority 300
 context math(context)
 snippet `(?<!\\)a(sin|cos|tan|cot|csc|sec)` "arc-triangle" wA
-\\arc``rv = m[1]`` $0
+\\arc``rv = m[1]``$0
 endsnippet
 
 priority 300
 context math(context)
 snippet `a(max|min)` "arg min/max" wA
-\arg``rv = m[1]``_{$1} $0
+\arg``rv = m[1]``_{$1}$0
 endsnippet
 
 context math(context)
 snippet ' "prime" iA
-^{\prime} $0
+^{\prime}$0
 endsnippet
 
 priority 200
 context math(context)
 snippet `\\prime\}\ \'` "prime" iA
-\prime\prime} $0
+\prime\prime}$0
 endsnippet
 
 context math(context)
 snippet -- "setminus" iA
-\setminus $0
+\setminus$0
 endsnippet
 
 priority 200
 context math(context)
 snippet `([a-zA-Z])(c|C)al` "mathcal" A
-\mathcal{``rv = m[1].toUpperCase()``} $0
+\mathcal{``rv = m[1].toUpperCase()``}$0
 endsnippet
 
 # snippet `(\\?\w+)(b|B)f` "textbf" A
-# \textbf{``rv = m[1]``} $0
+# \textbf{``rv = m[1]``}$0
 # endsnippet
 
 context math(context)
 snippet rm "mathrm" iA
-\mathrm{$1} $0
+\mathrm{$1}$0
 endsnippet
 
 context math(context)
 snippet scr "mathscr" iA
-\mathscr{$1} $0
+\mathscr{$1}$0
 endsnippet
 
 context math(context)
 snippet st "star" iA
-^{\star} $0
+^{\star}$0
 endsnippet
 
 context math(context)
 snippet ** "asterisk" iA
-^{\ast} $0
+^{\ast}$0
 endsnippet
 
 context math(context)
 snippet _* "asterisk" iA
-_{\ast} $0
+_{\ast}$0
 endsnippet
 
 context math(context)
 snippet `\\ast\}\ \*` "asterisk" iA
-\ast\ast} $0
+\ast\ast}$0
 endsnippet
 
 context math(context)
 snippet ^. "\dot" iA
-\dot{$1} $0
+\dot{$1}$0
 endsnippet
 
 context math(context)
@@ -986,54 +992,54 @@ endsnippet
 
 context math(context)
 snippet >> ">>" iA
-\gg $0
+\gg$0
 endsnippet
 
 context math(context)
 snippet << "<<" iA
-\ll $0
+\ll$0
 endsnippet
 
 context math(context)
 snippet ind "indicator function" iA
-\mathbbm{1}_{$1} $0
+\mathbbm{1}_{$1}$0
 endsnippet
 
 priority 200
 context math(context)
 snippet spt "support" iA
-\mathop{\mathrm{supp}}($1) $0
+\mathop{\mathrm{supp}}($1)$0
 endsnippet
 
 context math(context)
 snippet mean "Expectation" iA
-\mathbb{E}_{$1}\left[$2 \right] $0
+\mathbb{E}_{$1}\left[$2 \right]$0
 endsnippet
 
 context math(context)
 snippet `(?<!\\)Var` "Variation" A
-\Var_{$1}\left[$2 \right] $0
+\Var_{$1}\left[$2 \right]$0
 endsnippet
 
 context math(context)
 snippet `(?<!\\)Cov` "Covariance" A
-\Cov_{$1}\left[$2 \right] $0
+\Cov_{$1}\left[$2 \right]$0
 endsnippet
 
 context math(context)
 snippet `(?<!\\)Pr` "Probability" A
-\Pr_{$1}($2) $0
+\Pr_{$1}($2)$0
 endsnippet
 
 priority 200
 context math(context)
 snippet `(?<!\\)sim` "sim" A
-\sim $0
+\sim$0
 endsnippet
 
 context math(context)
 snippet apx "approx" iA
-\approx $0
+\approx$0
 endsnippet
 
 context math(context)
@@ -1043,7 +1049,7 @@ endsnippet
 
 context math(context)
 snippet ems "empty set" iA
-\varnothing $0
+\varnothing$0
 endsnippet
 
 snippet emph "emph" iA
@@ -1058,41 +1064,41 @@ endsnippet
 
 context math(context)
 snippet := "definition in math" iA
-\coloneqq $0
+\coloneqq$0
 endsnippet
 
 context math(context)
 snippet =: "definition in math" iA
-\eqqcolon $0
+\eqqcolon$0
 endsnippet
 
 context math(context)
 snippet :: "colon" iA
-\colon $0
+\colon$0
 endsnippet
 
 priority 200
 context math(context)
 snippet idd "identity" iA
-\identity_{$1} $0
+\identity_{$1}$0
 endsnippet
 
 context math(context)
 snippet quo "\quotient" iA
-\quotient{$1}{$2} $0
+\quotient{$1}{$2}$0
 endsnippet
 
 context math(context)
 snippet `\|\_` "\at" A
-\at{$1}{$2}{$3} $0
+\at{$1}{$2}{$3}$0
 endsnippet
 
 snippet atf "\autoref{}" wA
-\autoref{$1} $0
+\autoref{$1}$0
 endsnippet
 
 snippet hpr "\hyperref[]{}" wA
-\hyperref[$1]{$2} $0
+\hyperref[$1]{$2}$0
 endsnippet
 
 snippet lbl "\label{}" iA
@@ -1113,42 +1119,42 @@ endsnippet
 
 context math(context)
 snippet vph "same level of underbrace" iA
-\vphantom{$1} $0
+\vphantom{$1}$0
 endsnippet
 
 context math(context)
 snippet hom "homorphism" iAw
-\Homomorphism $0
+\Homomorphism$0
 endsnippet
 
 context math(context)
 snippet Obj "object" iA
-\Object $0
+\Object$0
 endsnippet
 
 context math(context)
 snippet mor "morphism" iA
-\Morphism $0
+\Morphism$0
 endsnippet
 
 context math(context)
 snippet __ "\underset{}{}" iA
-\underset{$1}{$2} $0
+\underset{$1}{$2}$0
 endsnippet
 
 context math(context)
 snippet ^^ "\overset{}{}" iA
-\overset{$1}{$2} $0
+\overset{$1}{$2}$0
 endsnippet
 
 context math(context)
 snippet fk "\mathfrak{}" iA
-\mathfrak{$1} $0
+\mathfrak{$1}$0
 endsnippet
 
 context math(context)
 snippet tg "\triangle" iA
-\triangle $0
+\triangle$0
 endsnippet
 
 snippet `(?<!\\)qed` "\qed" iA
@@ -1187,20 +1193,33 @@ snippet opPD "Optimization problem with primal & dual" bA
 \]$0
 endsnippet
 
-# Added by me
+# End of the default snippets
 
+###
+
+# Beginning of snippets I added
+
+# "Lone" sum, which is just a summation symbol; used when indicating the limits of a sum is superfluous
 context math(context)
-snippet `(?<![\\a-zA-Z])yii` "y_{i}" iA
-y_{i} $0
+snippet lsum "lonesum" A
+\sum$0
 endsnippet
 
+# align* environemnt
 snippet alignn "align" iA
 \begin{align*}
 	$1
 \end{align*}$0
 endsnippet
 
+# quad ("single quad")
+context math(context)
+snippet quad "\quad" A
+\qquad$0
+endsnippet
+
+# qquad ("double quad")
 context math(context)
 snippet dquad "\qquad" A
-\qquad $0
+\qquad$0
 endsnippet
