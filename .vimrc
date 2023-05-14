@@ -8,8 +8,8 @@ map "' "+
 " Use the spacebar for commands
 map <Space> :
 " Have j and k navigate visual lines
-noremap j gj
-noremap k gk
+"noremap j gj
+"noremap k gk
 " Have gj and gk navigate logical lines
 noremap gj j
 noremap gk k

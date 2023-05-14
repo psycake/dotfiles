@@ -1,12 +1,12 @@
 # These snippets come from https://github.com/sleepymalc/VSCode-LaTeX-Inkscape/blob/main/VSCode-setting/Snippets/latex.hsnips
 # (commit 08eea6b)
-#
+
 # I have made a few edits to these default snippets
 # The main change I have made (to 175 of them) is that I have replaced " $0" with "$0"
-# I made this change since I found it frustrating to have a space inserted where I didn't want any (i.e. before a closing parenthesis) or to have multiple spaces after using multiple snippets; plus I don't really mind pressing the spacebar
-#
+# I made this change since Ib found it frustrating to have a space inserted where I didn't want any (i.e. before a closing parenthesis) or to have multiple spaces after using multiple snippets; plus I don't really mind pressing the spacebar
+
 # I clarify other edits in the relevant snippets
-#
+
 # I also organised the snippets in multiple files
 
 ########
@@ -142,7 +142,7 @@ endsnippet
 priority 100
 context math(context)
 snippet pdif "d/dx" iA
-\frac{\partial ${1:V}}{\partial ${2:x}}$0
+\frac{\partial ${1:f}}{\partial ${2:x}}$0
 endsnippet
 
 ##############
@@ -178,7 +178,7 @@ endsnippet
 # Others
 
 context math(context)
-snippet `(\\?[a-zA-Z]\w*|\\[^(^\s]+\})(h|H)(t)` "hat" A
+snippet `(\\?[a-zA-Z]\w*|\\[^(^\s]+\})(h|H)(at)` "hat" A
 \hat{``rv = m[1]``}$0
 endsnippet
 
@@ -206,11 +206,9 @@ endsnippet
 # Math
 
 context math(context)
-snippet case "cases" iA
+snippet dcase "cases" iA
 \begin{dcases}
-	$1, &\text{ if } $3 ;\\\\
-	$2, &\text{ if } $4 ;\\\\
-	$5, &\text{ otherwise} .
+	$1
 \end{dcases}$0
 endsnippet
 
@@ -331,7 +329,7 @@ endsnippet
 
 priority 2000
 context math(context)
-snippet `(b|p)mat([1-9]{1})\ ([1-9]{1})` "matrix" iwA
+snippet `(b|B|p|v|V)mat([1-9]{1})\ ([1-9]{1})` "matrix" iwA
 \begin{``rv = m[1]``matrix}``
 	let order = 1;
 	let nrow = m[2];
@@ -397,27 +395,22 @@ snippet <> "<>" iA
 endsnippet
 
 context math(context)
-snippet lr, "<>" iA
+snippet lra "<>" iA
 \left\langle $1 \right\\rangle$0
 endsnippet
 
 context math(context)
-snippet lrd "()" iA
+snippet lrp "()" iA
 \left( $1 \right)$0
 endsnippet
 
 context math(context)
-snippet {} "{}" iA
-\\{ $1 \\}$0
-endsnippet
-
-context math(context)
-snippet lra "{}" iA
+snippet lrc "{}" iA
 \\left\\{ $1 \\right\\}$0
 endsnippet
 
 context math(context)
-snippet lrq "[]" iA
+snippet lrb "[]" iA
 \left[ $1 \right]$0
 endsnippet
 
@@ -447,38 +440,87 @@ endsnippet
 
 context math(context)
 snippet abs "abs value" iA
-\vert ${1} \vert$0
+| ${1} |$0
 endsnippet
 
 context math(context)
 snippet Abs "abs value" iA
-\left\vert ${1} \right\vert$0
+\left| ${1} \right|$0
 endsnippet
 
 priority 200
 context math(context)
 snippet norm "norm" iA
-\lVert $1 \rVert$0
+\| $1 \|$0
 endsnippet
 
 context math(context)
 snippet Norm "Norm" iA
-\left\lVert $1 \right\rVert$0
+\left\| $1 \right\|$0
 endsnippet
 
 #############
 # Integrals #
 #############
 
-priority 100
+# Indefinite integrals
+
 context math(context)
-snippet dint "integral" iA
-\int_{${1:-\infty}}^{${2:\infty}} ${3} \\,\mathrm{d}${4:x}$0
+snippet `(?<!\\)int` "indefinite integral" A
+\int $1 \ d${2:x}$0
 endsnippet
 
 context math(context)
-snippet `(?<!\\)int` "integral without anything" A
-\int$0
+snippet `(?<!\\)iint` "double indefinite integral" A
+\iint$0
+endsnippet
+
+context math(context)
+snippet `(?<!\\)iiint` "triple indefinite integral" A
+\iiint$0
+endsnippet
+
+# Definite integrals
+
+priority 100
+context math(context)
+snippet dint "defined integral" iA
+\int_{${1:a}}^{${2:b}} $3 \ d${4:x}$0
+endsnippet
+
+context math(context)
+snippet oinf "integral from 0 to infty" iA
+\int_{0}^{\infty} $1 \ d${2:x}$0
+endsnippet
+
+context math(context)
+snippet infi "integral from -infty to infty" iA
+\int_{-\infty}^{\infty} $1 \ d${2:x}$0
+endsnippet
+
+# Integral over a curve
+priority 100
+context math(context)
+snippet cint "integral over a curve" iA
+\int_{${1:c}} $2 \ d${3:t}$0
+endsnippet
+
+# Integral over a closed curve
+context math(context)
+snippet `(?<!\\)oint` "integral over a closed curve" A
+\oint$0
+endsnippet
+
+# Evaluation
+context math(context)
+snippet eval "evaluation" iA
+\left. $1 \right|_{${2:a}}^{${3:b}}$0
+endsnippet
+
+priority 200
+context math(context)
+snippet peval "parentheses evaluation" iA
+\left.\left( $1 \right)\right|_{${2:a}}^{${3:b}}$0
 endsnippet
 
 ###############
@@ -742,6 +784,11 @@ snippet => "implies" iA
 endsnippet
 
 context math(context)
+snippet ims "implies" iA
+\implies$0
+endsnippet
+
+context math(context)
 snippet =< "implied by" iA
 \impliedby$0
 endsnippet
@@ -783,6 +830,11 @@ endsnippet
 context math(context)
 snippet ... "dots" iA
 \dots$0
+endsnippet
+
+context math(context)
+snippet vdots "vdots" iA
+\vdots$0
 endsnippet
 
 priority 200
@@ -1038,7 +1090,7 @@ endsnippet
 
 context math(context)
 snippet ~~ "approx equal" iA
-\thickapprox$0
+\approx$0
 endsnippet
 
 context math(context)
@@ -1203,12 +1255,13 @@ endsnippet
 
 context math(context)
 snippet quad "\quad" A
-\qquad$0
+\quad $0
 endsnippet
 
+priority 200
 context math(context)
 snippet dquad "\qquad" A
-\qquad$0
+\qquad $0
 endsnippet
 
 ###############################
@@ -1218,7 +1271,7 @@ endsnippet
 # Subscripts
 
 context math(context)
-snippet `([a-zA-Z])\1` "subscript" A
+snippet `(?<!\d)([a-qs-zA-Z\d])\1` "subscript" A
 _{``rv = m[1]``}$0
 endsnippet
 
@@ -1238,6 +1291,11 @@ _{\ast}$0
 endsnippet
 
 # Superscripts
+
+context math(context)
+snippet `([A-Za-z\d)}])\^([A-Za-z\d])` "auto supscript" A
+`` rv = m[1]``^{``rv = m[2]``$1}$0
+endsnippet
 
 priority 200
 context math(context)
@@ -1314,7 +1372,7 @@ snippet `(\\\\)([a-zA-Z])` A
 endsnippet
 
 context math(context)
-snippet `(\\?[a-zA-Z]\w*|\\[^(^\s]+\})(b|B)(f)` "mathbf" A
+snippet `(\\?[a-zA-Z]\w*|\\[^(^\s]+\})(.)(é)` "mathbf" A
 \mathbf{``rv = m[1]``}$0
 endsnippet
 

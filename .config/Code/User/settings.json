@@ -10,7 +10,6 @@
     "C_Cpp.default.compilerPath": "/usr/bin/gcc",
     "workbench.preferredDarkColorTheme": "Monokai Pro (Filter Machine)",
     "workbench.preferredLightColorTheme": "Noctis Lilac",
-    "workbench.iconTheme": "Monokai Pro (Filter Machine) Icons",
     "window.titleBarStyle": "custom",
     "window.dialogStyle": "custom",
     "window.restoreWindows": "folders",
@@ -24,7 +23,7 @@
     "files.trimFinalNewlines": true,
     "dotnetAcquisitionExtension.enableTelemetry": false,
     "vim.camelCaseMotion.enable": true,
-    "workbench.colorTheme": "One Dark Pro",
+    "workbench.colorTheme": "Everforest Light",
     "files.exclude": {
         "**/.stfolder": true,
         "**/.stversions": true,
@@ -46,7 +45,6 @@
     "terminal.integrated.cursorStyle": "line",
     "editor.fontWeight": "300",
     "editor.cursorBlinking": "phase",
-    "editor.lineNumbers": "relative",
     "editor.minimap.renderCharacters": false,
     "git.openRepositoryInParentFolders": "always",
 
