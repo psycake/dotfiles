@@ -8,8 +8,8 @@ map "' "+
 " Use the spacebar for commands
 map <Space> :
 " Have j and k navigate visual lines
-"noremap j gj
-"noremap k gk
+noremap j gj
+noremap k gk
 " Have gj and gk navigate logical lines
 noremap gj j
 noremap gk k
@@ -58,7 +58,7 @@ set tabstop=4 shiftwidth=4 noexpandtab
 " Use Alt-p for pasteinto (for hyperlinks, etc.)
 "map <A-p> :pasteinto
 " Surround functionality
-" Define the various surrounds 
+" Define the various surrounds
 "exmap surround_wiki surround [[ ]]
 "exmap surround_double_quotes surround " "
 "exmap surround_single_quotes surround ' '
@@ -68,19 +68,23 @@ set tabstop=4 shiftwidth=4 noexpandtab
 "exmap surround_bold surround ** **
 "exmap surround_italics surround _ _
 "exmap surround_code surround ` `
+"exmap surround_latex_single surround $ $
+"exmap surround_latex_multi surround $$ $$
 " Use s{.} to surround
-"nunmap z
-"vunmap z
+"nunmap m
+"vunmap m
 "map [[ :surround_wiki
-"map z" :surround_double_quotes
-"map z' :surround_single_quotes
-"map zb :surround_brackets
-"map z( :surround_brackets
-"map z) :surround_brackets
-"map z[ :surround_square_brackets
-"map z[ :surround_square_brackets
-"map z{ :surround_curly_brackets
-"map z} :surround_curly_brackets
-"map z* :surround_bold
-"map z_ :surround_italics
-"map z` :surround_code
+"map m" :surround_double_quotes
+"map m' :surround_single_quotes
+"map mb :surround_brackets
+"map m( :surround_brackets
+"map m) :surround_brackets
+"map m[ :surround_square_brackets
+"map m[ :surround_square_brackets
+"map m{ :surround_curly_brackets
+"map m} :surround_curly_brackets
+"map m* :surround_bold
+"map m_ :surround_italics
+"map m` :surround_code
+"map m$ :surround_latex_single
+"map m§ :surround_latex_multi
